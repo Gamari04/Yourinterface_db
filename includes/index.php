@@ -94,7 +94,16 @@
             </div>
         </div>
 
-
+        <?php
+    if(isset($_GET['msg'])){
+      $msg = $_GET['msg'];
+      echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+      ' . $msg . '
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>';
+    }
+  
+  ?>
 
         <div class="fresh-table full-color-orange">
   <!--
@@ -103,7 +112,7 @@
   -->
 
   <div class="toolbar">
-    <button id="alertBtn" class="btn btn-default">Alert</button>
+    <button id="alertBtn" class="btn btn-default"><a href="form.php">ADD Client</a></button>
   </div>
 
   <table id="fresh-table" class="table">
@@ -113,16 +122,20 @@
       <th data-field="Email">Email</th>
       <th data-field="Budget">Budget</th>
       <th data-field="actions" data-formatter="operateFormatter" data-events="operateEvents">Actions</th>
+      
     </thead>
     <tbody>
  <?php
-    while($row = mysqli_fetch_assoc($query)){
+    while($row = mysqli_fetch_assoc($result)){
 ?>
       <tr>
         <td><?php echo $row['id']?></td>
         <td><?php echo $row['name']?></td>
         <td><?php echo $row['email']?></td>
-        <td><?php echo $row['Budget']?></td>
+        <td><?php echo $row['budget']?></td>
+        <td><button  class="btn btn-default"><a href="edit.php?id=<?= $row['id']?>">Edit</a></button></td>
+        <td><button  class="btn btn-default"><a href="delete.php?id=<?= $row['id']?>">DELETE</a></button></td>
+  </div>
       </tr>
       
       <?php } ?>
@@ -133,4 +146,4 @@
     </div>
 
 
-<?php include('includes/footer.php');?>
+<?php include('footer.php');?>

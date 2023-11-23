@@ -4,8 +4,8 @@
         $name = $_POST["name"];
         $email = $_POST["email"];
         $Budget = $_POST["Budget"];
-        $requet = "INSERT INTO `clients1`(`Name`, `Email`, `Budget`) VALUES ('$name','$email','$Budget')";
-        $query = mysqli_query($connection,$requet);
+        $query = "INSERT INTO `clients1`(`Name`, `Email`, `Budget`) VALUES ('$name','$email','$Budget')";
+        $result = mysqli_query($connection,$query);
         if(isset($query)){
             header("location:index.php?msg=added to the database successfuly");
         }
