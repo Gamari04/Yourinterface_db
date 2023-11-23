@@ -1,11 +1,6 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
 
-// Create connection
-$connection = mysqli_connect($servername, $username, $password);
-
+$connection = mysqli_connect("localhost" , "root" , "" , "design_agency");
 // Check connection
 if (!$connection) {
   die("Connection failed: " . mysqli_connect_error());
