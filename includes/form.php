@@ -74,5 +74,9 @@
 
 </div>
 <script src="../assets/js/form.js"></script>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/core/popper.min.js"></script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script src="../assets/js/material-dashboard.min.js?v=3.1.0"></script>
 </body>
 </html>

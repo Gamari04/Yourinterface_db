@@ -9,6 +9,4 @@
         else{
             echo "error";
         }
-    
-
 ?>

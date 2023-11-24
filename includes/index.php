@@ -99,8 +99,16 @@
       $msg = $_GET['msg'];
       echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
       ' . $msg . '
-      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      <button type="button" class="btn-close text-lg py-3 opacity-10" data-bs-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
     </div>';
+//     <div class="alert alert-success alert-dismissible text-white" role="alert">
+//     <span class="text-sm">A simple success alert with <a href="javascript:;" class="alert-link text-white">an example link</a>. Give it a click if you like.</span>
+//     <button type="button" class="btn-close text-lg py-3 opacity-10" data-bs-dismiss="alert" aria-label="Close">
+//       <span aria-hidden="true">&times;</span>
+//     </button>
+//   </div>
     }
   
   ?>
@@ -111,9 +119,11 @@
     Available colors only for the toolbar: toolbar-color-blue, toolbar-color-azure, toolbar-color-green, toolbar-color-red, toolbar-color-orange
   -->
 
-  <div class="toolbar">
-    <button id="alertBtn" class="btn btn-default"><a href="form.php">ADD Client</a></button>
-  </div>
+  
+    <div class="col-lg-3 col-sm-6 col-12 mt-3 mb-3">
+                  <button class="btn bg-gradient-success w-50 mb-0 toast-btn" type="button" data-target="successToast"><a href="form.php">ADD Client</a></button>
+                </div>
+  
 
   <table id="fresh-table" class="table">
     <thead>
@@ -133,8 +143,13 @@
         <td><?php echo $row['name']?></td>
         <td><?php echo $row['email']?></td>
         <td><?php echo $row['budget']?></td>
-        <td><button  class="btn btn-default"><a href="edit.php?id=<?= $row['id']?>">Edit</a></button></td>
-        <td><button  class="btn btn-default"><a href="delete.php?id=<?= $row['id']?>">DELETE</a></button></td>
+        <!-- <td><button  class="btn btn-default"><a href="edit.php?id=<?= $row['id']?>">Edit</a></button></td> -->
+        <td><a class="btn btn-link text-dark px-3 mb-0" href="edit.php?id=<?= $row['id']?>"><i class="material-icons text-sm me-2">edit</i>Edit</a></td>
+        <td><button  class="btn btn-default"><a href="delete.php?id=<?= $row['id']?>"><lord-icon
+    src="https://cdn.lordicon.com/skkahier.json"
+    trigger="hover"
+    style="width:30px;height:30px">
+</lord-ico></a></button></td>
   </div>
       </tr>
       
@@ -144,6 +159,7 @@
 </div>
 
     </div>
-
+    
 
 <?php include('footer.php');?>
+<script src="https://cdn.lordicon.com/lordicon.js"></script>
