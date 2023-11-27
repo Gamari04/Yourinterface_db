@@ -22,9 +22,31 @@
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">table_view</i>
             </div>
-            <span class="nav-link-text ms-1">Projects</span>
+            <span class="nav-link-text ms-1"> All Projects</span>
           </a>
         </li>
+        <li class="nav-item">
+  <a class="nav-link text-white " href="orders.php">
+    
+      <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+        <i class="material-icons opacity-10">assignment</i>
+      </div>
+    
+    <span class="nav-link-text ms-1">orders</span>
+  </a>
+
+</li>
+<li class="nav-item">
+  <a class="nav-link text-white " href="Confirmed.php">
+    
+      <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+        <i class="material-icons opacity-10">assignment</i>
+      </div>
+    
+    <span class="nav-link-text ms-1">Confermed orders</span>
+  </a>
+  
+</li>
       </ul>
     </div>
     <div class="sidenav-footer position-absolute w-100 bottom-0 ">

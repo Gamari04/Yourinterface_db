@@ -103,12 +103,6 @@
       <span aria-hidden="true">&times;</span>
     </button>
     </div>';
-//     <div class="alert alert-success alert-dismissible text-white" role="alert">
-//     <span class="text-sm">A simple success alert with <a href="javascript:;" class="alert-link text-white">an example link</a>. Give it a click if you like.</span>
-//     <button type="button" class="btn-close text-lg py-3 opacity-10" data-bs-dismiss="alert" aria-label="Close">
-//       <span aria-hidden="true">&times;</span>
-//     </button>
-//   </div>
     }
   
   ?>
@@ -159,7 +153,11 @@
 </div>
 
     </div>
+
+
+    
     
 
 <?php include('footer.php');?>
 <script src="https://cdn.lordicon.com/lordicon.js"></script>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
