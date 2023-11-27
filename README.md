@@ -37,6 +37,10 @@ En tant qu'administrateur du plateforme :
 4. Consultez la documentation dans le dossier `/docs` pour plus de détails.
 
 
-## Auteurs
+## le lien du compte rendu
 
-- Salma El gmiri
+- https://www.canva.com/design/DAF0sl8rswI/L-ZVEvK813bbSfSk3lZNZg/edit?utm_content=DAF0sl8rswI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+## le lien du diagramme
+
+- https://lucid.app/lucidchart/d39b6cd4-4a06-418e-9052-6dc5154abdfc/edit?viewport_loc=-1061%2C87%2C2083%2C996%2CHWEp-vi-RSFO&invitationId=inv_1afc30dd-6708-4dfa-92df-70e46fb069cb
