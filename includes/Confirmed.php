@@ -1,7 +1,11 @@
 <?php include('header.php');
 
 include "connection.php";
-$query = "SELECT * FROM `confirmed`";
+$query = "SELECT confirmed.*,confirmed.name, 
+clients1.name
+FROM `confirmed` 
+INNER JOIN clients1 ON confirmed.client_id = clients1.id 
+ ";
 $result = mysqli_query($connection , $query);
 ?>
 <table id="fresh-table" class="table">
